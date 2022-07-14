@@ -3,11 +3,27 @@ import pandas as pd
 import numpy as np
 
 
-#####################################################################
+
+##################################################################### CONFIG
+
 config = {}
 
 
-#####################################################################
+
+##################################################################### SIDEBAR
+
+with st.sidebar:
+	
+	sb_baserev = st.text_input('Base revenue')
+
+	sb_revunit = st.radio(
+		'unit',
+		('million','billion')
+	)
+
+
+
+##################################################################### MAIN PAGE
 st.write('# Financial Modelling')
 
 st.write('## Introduction')
@@ -34,3 +50,6 @@ if st.checkbox('Technical overview'):
 			* Predict the House Price using the ML model
 			* Display output for analysis
 		''')
+
+	
+
