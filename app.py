@@ -14,22 +14,22 @@ config = {}
 
 with st.sidebar:
 	
-	sb_baserevenue = st.text_input('Base Revenue')
+	sb_baserevenue = st.number_input('Base Revenue')
 
 	sb_revenueunit = st.radio('Rev. unit', ('million','billion'))
 	
-	sb_revenuegrowth1 = st.text_input('Revenue Growth (next year)', value=0.05)
-	sb_revenuegrowthN = st.text_input('Revenue Growth (terminal year)', value=0.02)
+	sb_revenuegrowth1 = st.number_input('Revenue Growth (next year)', value=0.05)
+	sb_revenuegrowthN = st.number_input('Revenue Growth (terminal year)', value=0.02)
 	
-	sb_sharesout = st.text_input('Shares Outstanding', value=100)
+	sb_sharesout = st.number_input('Shares Outstanding', value=100)
 	sb_sharesoutunit = st.radio('Shares Out. unit', ('million','billion'))
 	
-	sb_netmargin = st.text_input('Net Margin (%)', value=0.15)
-	sb_fcfmargin = st.text_input('FCF Margin (%)', value=0.15)
+	sb_netmargin = st.number_input('Net Margin (%)', value=0.15)
+	sb_fcfmargin = st.number_input('FCF Margin (%)', value=0.15)
 	
-	sb_numofyears = st.text_input('Number of Years', value=10)
-	sb_terminalyearmultiple = st.text_input('Terminal Year Multiple', value=12)
-	sb_discountrate = st.text_input('Discount Rate (%)', value=0.125)
+	sb_numofyears = st.number_input('Number of Years', value=10)
+	sb_terminalyearmultiple = st.number_input('Terminal Year Multiple', value=12)
+	sb_discountrate = st.number_input('Discount Rate (%)', value=0.125)
 
 
 
