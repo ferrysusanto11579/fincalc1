@@ -14,9 +14,7 @@ config = {}
 
 with st.sidebar:
 	
-	sb_baserevenue = st.number_input('Base Revenue')
-
-	sb_revenueunit = st.radio('Rev. unit', ('million','billion'))
+	sb_baserevenue = st.number_input('Base Revenue (in million)', value=690.1)
 	
 	sb_revenuegrowth1 = st.number_input('Revenue Growth (next year)', value=0.05)
 	sb_revenuegrowthN = st.number_input('Revenue Growth (terminal year)', value=0.02)
