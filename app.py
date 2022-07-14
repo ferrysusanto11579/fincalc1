@@ -16,20 +16,20 @@ with st.sidebar:
 	
 	sb_baserevenue = st.text_input('Base Revenue')
 
-	sb_revenueunit = st.radio('unit', ('million','billion'))
+	sb_revenueunit = st.radio('Rev. unit', ('million','billion'))
 	
-	sb_revenuegrowth1 = st.text_input('Revenue growth (next year)', value=0.05)
-	sb_revenuegrowthN = st.text_input('Revenue growth (terminal year)', value=0.02)
+	sb_revenuegrowth1 = st.text_input('Revenue Growth (next year)', value=0.05)
+	sb_revenuegrowthN = st.text_input('Revenue Growth (terminal year)', value=0.02)
 	
-	sb_sharesout = st.text_input('Shares outstanding', value=100)
-	sb_sharesoutunit = st.radio('unit2', ('million','billion'))
+	sb_sharesout = st.text_input('Shares Outstanding', value=100)
+	sb_sharesoutunit = st.radio('Shares Out. unit', ('million','billion'))
 	
-	sb_netmargin = st.text_input('Net margin (%)', value=0.10)
-	sb_fcfmargin = st.text_input('FCF margin (%)', value=0.10)
+	sb_netmargin = st.text_input('Net Margin (%)', value=0.15)
+	sb_fcfmargin = st.text_input('FCF Margin (%)', value=0.15)
 	
-	sb_numofyears = st.text_input('Number of years', value=10)
-	sb_terminalyearmultiple = st.text_input('Terminal year multiple', value=12)
-	sb_discountrate = st.text_input('Discount rate (%)', value=0.125)
+	sb_numofyears = st.text_input('Number of Years', value=10)
+	sb_terminalyearmultiple = st.text_input('Terminal Year Multiple', value=12)
+	sb_discountrate = st.text_input('Discount Rate (%)', value=0.125)
 
 
 
