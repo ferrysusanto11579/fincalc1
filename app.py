@@ -14,12 +14,22 @@ config = {}
 
 with st.sidebar:
 	
-	sb_baserev = st.text_input('Base revenue')
+	sb_baserevenue = st.text_input('Base Revenue')
 
-	sb_revunit = st.radio(
-		'',
-		('million','billion')
-	)
+	sb_revenueunit = st.radio('unit', ('million','billion'))
+	
+	sb_revenuegrowth1 = st.text_input('Revenue growth (next year)', value=0.05)
+	sb_revenuegrowthN = st.text_input('Revenue growth (terminal year)', value=0.02)
+	
+	sb_sharesout = st.text_input('Shares outstanding', value=100)
+	sb_sharesoutunit = st.radio('unit', ('million','billion'))
+	
+	sb_netmargin = st.text_input('Net margin (%)', value=0.10)
+	sb_fcfmargin = st.text_input('FCF margin (%)', value=0.10)
+	
+	sb_numofyears = st.text_input('Number of years', value=10)
+	sb_terminalyearmultiple = st.text_input('Terminal year multiple', value=12)
+	sb_discountrate = st.text_input('Discount rate (%)', value=0.125)
 
 
 
