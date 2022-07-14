@@ -19,8 +19,7 @@ with st.sidebar:
 	sb_revenuegrowth1 = st.number_input('Revenue Growth (next year)', value=0.05)
 	sb_revenuegrowthN = st.number_input('Revenue Growth (terminal year)', value=0.02)
 	
-	sb_sharesout = st.number_input('Shares Outstanding', value=100)
-	sb_sharesoutunit = st.radio('Shares Out. unit', ('million','billion'))
+	sb_sharesout = st.number_input('Shares Outstanding (in million)', value=1200)
 	
 	sb_netmargin = st.number_input('Net Margin (%)', value=0.15)
 	sb_fcfmargin = st.number_input('FCF Margin (%)', value=0.15)
