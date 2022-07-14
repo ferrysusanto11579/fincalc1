@@ -17,7 +17,7 @@ with st.sidebar:
 	sb_baserev = st.text_input('Base revenue')
 
 	sb_revunit = st.radio(
-		None,
+		'',
 		('million','billion')
 	)
 
